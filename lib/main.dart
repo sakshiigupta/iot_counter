@@ -1,5 +1,5 @@
 import 'dart:convert';
-
+import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'package:flutter/material.dart';
 
 import 'package:http/http.dart' as http;
@@ -36,6 +36,7 @@ class _MainFetchDataState extends State<MainFetchData> {
   int count = 0;
   var isLoading = false;
 
+
   _fetchData() async {
     setState(() {
       isLoading = true;
@@ -64,16 +65,16 @@ class _MainFetchDataState extends State<MainFetchData> {
             onPressed: _fetchData,
           ),
         ),
-        body: isLoading
-            ? Center(
-                child: CircularProgressIndicator(),
-              )
-            : Text(
+        body: ModalProgressHUD(
+          inAsyncCall: isLoading,
+          child: Text(
               '$list[feeds][0][field1]',
               style: TextStyle(
                 fontSize: 20,
                 
               ),
-            ));
+            ),
+        ),
+        );
   }
 }
