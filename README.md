@@ -1,6 +1,8 @@
 # iot_counter
 
-A new Flutter project.
+A new Flutter project for IOT coursework
+
+Simple visitors counting app 
 
 ## Getting Started
 
