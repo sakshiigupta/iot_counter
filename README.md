@@ -2,7 +2,8 @@
 
 A new Flutter project for IOT coursework
 
-Simple visitors counting app 
+Simple visitors counting app using ESP32 WiFi module and IR sensors
+Displays the result on a mobile application
 
 ## Getting Started
 
