@@ -7,8 +7,8 @@
 
 int count = 0;
 
-const char* ssid = "GUPTA";
-const char* password = "Sanjay@123";
+const char* ssid = "xyz"; //ssid
+const char* password = "******"; // password for connection
 
 String serverName = "https://api.thingspeak.com/update?api_key=FCQTWGDAMSPCPTX1";
 //String serverName = "http://ptsv2.com/t/b9ppu-1593539172/post?";
